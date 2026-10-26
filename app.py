@@ -67,7 +67,7 @@ def count_tesla_primary():
 
         return jsonify({
             "count": n
-        }), 201
+        }), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -82,7 +82,7 @@ def count_bmw_secondary():
 
         return jsonify({
             "count": n
-        }), 201
+        }), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
